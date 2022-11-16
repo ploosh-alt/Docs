@@ -5,7 +5,7 @@ function filter_bypass(app) {
     app.search.pd_round.input.style.display = 'none';
     app.search.pd_round.sep.style.display = 'none';
     app.search.pd_round.style.display = 'none';
-    let extBased = params.get('ext') ? params.get('ext') == true : null;
+    let extBased = params.get('ext') ? params.get('ext') == "true" : null;
     if (extBased == null) {
         app.main.filter_bypass = app.createElement(
             'div',
