@@ -16,12 +16,17 @@ function filter_bypass(app) {
                             'text-align': 'center'
                         }
                     }),
-                    app.createLink('/#fb?ext=false', 'Not extension based', {
+                    app.createElement('br', '', {
+                        style: {
+                            height: '100px'
+                        }
+                    }),
+                    app.createLink('/?ext=false#fb', 'Not extension based', {
                         style: {
                             'margin-bottom': '0'
                         }
                     }),
-                    app.createLink('/#fb?ext=true', 'Extension based', {
+                    app.createLink('/?ext=true#fb', 'Extension based', {
                         style: {
                             'margin-bottom': '0'
                         }
@@ -30,11 +35,7 @@ function filter_bypass(app) {
                     class: 'data-section'
                 }),
 
-            ], {
-                'style': {
-                    display: 'inline-flex'
-                }
-            });
+            ]);
     }
     app.search.back.style.display = 'inline';
     app.search.back.setAttribute(
