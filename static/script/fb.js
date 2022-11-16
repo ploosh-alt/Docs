@@ -16,23 +16,25 @@ function filter_bypass(app) {
                             'text-align': 'center'
                         }
                     }),
-                    app.createElement('a', 'Not extension based', {
+                    app.createLink('/#fb?ext=false', 'Not extension based', {
                         style: {
                             'margin-bottom': '0'
-                        },
-                        href: '/#fb?ext=false'
+                        }
                     }),
-                    app.createElement('p', 'Are you sure you want to <a href="/load.html#aHR0cHM6Ly9kaXNjb3JkLmdnLzRQMkFnQlBZeHc%3D">proceed</a>?', {
+                    app.createLink('/#fb?ext=true', 'Extension based', {
                         style: {
                             'margin-bottom': '0'
-                        },
-                        href: '/#fb?ext=true'
+                        }
                     }),
                 ], {
                     class: 'data-section'
                 }),
 
-            ]);
+            ], {
+                'style': {
+                    display: 'inline-flex'
+                }
+            });
     }
     app.search.back.style.display = 'inline';
     app.search.back.setAttribute(
