@@ -75,13 +75,15 @@ function filter_bypass(app) {
                         }),
         
                     ]);
+            } else {
+
             }
         } else {
             app.main.filter_bypass = app.createElement(
                 'div',
                 [
                     app.createElement('section', [
-                        app.createElement('h3', 'hi', {
+                        app.createElement('h3', 'message', {
                             style: {
                                 'margin-bottom': '0',
                                 'text-align': 'center'
@@ -93,7 +95,7 @@ function filter_bypass(app) {
                                 'content': ' '
                             }
                         }),
-                        app.createElement('p', 'nvm', {
+                        app.createElement('p', 'not done lol', {
                             style: {
                                 'margin-bottom': '0',
                                 'text-align': 'center'
