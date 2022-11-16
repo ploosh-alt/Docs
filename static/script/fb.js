@@ -70,7 +70,6 @@ function filter_bypass(app) {
                                     'text-align': 'center'
                                 }
                             }),
-                            app.createElement
                         ], {
                             class: 'data-section'
                         }),
