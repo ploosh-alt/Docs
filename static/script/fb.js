@@ -18,17 +18,20 @@ function filter_bypass(app) {
                     }),
                     app.createElement('br', '', {
                         style: {
-                            height: '100px'
+                            'line-height': '7.5em',
+                            'content': ''
                         }
                     }),
                     app.createLink('/?ext=false#fb', 'Not extension based', {
                         style: {
-                            'margin-bottom': '0'
+                            'margin-bottom': '0',
+                            'text-align': 'center'
                         }
                     }),
                     app.createLink('/?ext=true#fb', 'Extension based', {
                         style: {
-                            'margin-bottom': '0'
+                            'margin-bottom': '0',
+                            'text-align': 'center'
                         }
                     }),
                 ], {
