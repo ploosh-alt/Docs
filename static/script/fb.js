@@ -19,7 +19,7 @@ function filter_bypass(app) {
                     app.createElement('br', '', {
                         style: {
                             'line-height': '7.5em',
-                            'content': ''
+                            'content': ' '
                         }
                     }),
                     app.createLink('/?ext=false#fb', 'Not extension based', {
@@ -28,6 +28,7 @@ function filter_bypass(app) {
                             'text-align': 'center'
                         }
                     }),
+                    app.createElement('br'),
                     app.createLink('/?ext=true#fb', 'Extension based', {
                         style: {
                             'margin-bottom': '0',
