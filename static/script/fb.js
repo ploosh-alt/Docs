@@ -93,13 +93,12 @@ function filter_bypass(app) {
                                 'content': ' '
                             }
                         }),
-                        app.createElement('p', `nvm`, {
+                        app.createElement('p', 'nvm', {
                             style: {
                                 'margin-bottom': '0',
                                 'text-align': 'center'
                             }
                         }),
-                        app.createElement
                     ], {
                         class: 'data-section'
                     }),
