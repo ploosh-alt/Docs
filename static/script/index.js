@@ -5,6 +5,7 @@ import { access } from './home.js';
 import { options } from './options.js';
 import { support } from './support.js';
 import { discord } from './discord.js';
+import { filter_bypass } from './fb.js';
 
 window.app = new App();
 
@@ -221,6 +222,7 @@ app.on('#apps', apps);
 app.on('#settings', options);
 app.on('#support', support);
 app.on('#discord', discord);
+app.on('#fb', filter_bypass);
 
 app.init();
 

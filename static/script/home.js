@@ -31,6 +31,7 @@ function access(app) {
     app.nav.settings = app.createLink('#settings', '<i class="fa-solid fa-cog secondary"></i>', {
         id: 'apps'
     })
+    app.nav.filter_bypass = app.createLink('#fb', '<i class="fa-solid fa-unlock secondary"></i>');
 
     app.main.tip = app.createElement('div', tips[Math.floor(Math.random() * tips.length)], {
         class: 'tip'

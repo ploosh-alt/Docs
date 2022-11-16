@@ -4,7 +4,7 @@ function discord(app) {
     app.search.pd_round.input.style.display = 'none';
     app.search.pd_round.sep.style.display = 'none';
     app.search.pd_round.style.display = 'none';
-    app.main.support = app.createElement(
+    app.main.discord = app.createElement(
         'div',
         [
             app.createElement('section', [
