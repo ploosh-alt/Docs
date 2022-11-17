@@ -92,7 +92,7 @@ function filter_bypass(app) {
                                     'content': ' '
                                 }
                             }),
-                            app.createElement('p', 'First, open settings and find your wifi network.', {
+                            app.createElement('p', 'First, open settings and find your WiFi network.', {
                                 style: {
                                     'margin-bottom': '0',
                                     'text-align': 'center'
@@ -120,14 +120,14 @@ function filter_bypass(app) {
                                 }
                             }),
                             app.createElement('br'),
-                            app.createElement('p', 'Once it\'s rebooted, click on <a href="https://chrome.google.com/webstorex"><b>this</b></a>.', {
+                            app.createElement('p', 'Once it\'s rebooted, click on <a href="https://chrome.google.com/webstorex" rel="_blank"><b>this</b></a>.', {
                                 style: {
                                     'margin-bottom': '0',
                                     'text-align': 'center'
                                 }
                             }),
                             app.createElement('br'),
-                            app.createElement('p', 'In that tab, type <b>thisisunsafe<b> (no spaces) randomly, and disable your filter.', {
+                            app.createElement('p', 'In that tab, type <b>thisisunsafe</b> (no spaces) randomly, and disable your filter.', {
                                 style: {
                                     'margin-bottom': '0',
                                     'text-align': 'center'
