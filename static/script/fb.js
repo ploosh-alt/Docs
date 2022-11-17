@@ -171,7 +171,7 @@ function filter_bypass(app) {
                                         'content': ' '
                                     }
                                 }),
-                                app.createElement('p', 'Copy this code: <b>javascript:(function(){var a=document.createElement(\'script\');a.src=\'https://cdn.jsdelivr.net/gh/FogNetwork/Ingot/ingot.min.js\';document.body.appendChild(a);}())</b>', {
+                                app.createElement('p', 'Add a bookmark with any name and this code as the URL: <br><b>javascript:(function(){var a=document.createElement(\'script\');a.src=\'https://cdn.jsdelivr.net/gh/FogNetwork/Ingot/ingot.min.js\';document.body.appendChild(a);}())</b>', {
                                     style: {
                                         'margin-bottom': '0',
                                         'text-align': 'center'
@@ -185,14 +185,7 @@ function filter_bypass(app) {
                                     }
                                 }),
                                 app.createElement('br'),
-                                app.createElement('p', 'Click on the URL bar, paste that code, and then hit enter.', {
-                                    style: {
-                                        'margin-bottom': '0',
-                                        'text-align': 'center'
-                                    }
-                                }),
-                                app.createElement('br'),
-                                app.createElement('p', 'Disable your filter extension, then close the tab.', {
+                                app.createElement('p', 'Click on the bookmark in that new tab, Disable your filter extension, then close the tab.', {
                                     style: {
                                         'margin-bottom': '0',
                                         'text-align': 'center'
