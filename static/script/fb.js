@@ -76,7 +76,33 @@ function filter_bypass(app) {
         
                     ]);
             } else {
-
+                app.main.filter_bypass = app.createElement(
+                    'div',
+                    [
+                        app.createElement('section', [
+                            app.createElement('h3', 'Exploit found!', {
+                                style: {
+                                    'margin-bottom': '0',
+                                    'text-align': 'center'
+                                }
+                            }),
+                            app.createElement('br', '', {
+                                style: {
+                                    'line-height': '7.5em',
+                                    'content': ' '
+                                }
+                            }),
+                            app.createElement('p', 'this isn\'t done, but ltbeef is compatible.\nbookmarklets or devtools console must be enabled', {
+                                style: {
+                                    'margin-bottom': '0',
+                                    'text-align': 'center'
+                                }
+                            }),
+                        ], {
+                            class: 'data-section'
+                        }),
+        
+                    ]);
             }
         } else {
             app.main.filter_bypass = app.createElement(
