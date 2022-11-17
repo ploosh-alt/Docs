@@ -127,7 +127,7 @@ function filter_bypass(app) {
                                 }
                             }),
                             app.createElement('br'),
-                            app.createElement('p', 'In that tab, type <b>thisisunsafe</b> (no spaces) randomly, and disable your filter.', {
+                            app.createElement('p', 'In that tab, type <b>thisisunsafe</b> (no spaces) randomly, and disable your filter extension.', {
                                 style: {
                                     'margin-bottom': '0',
                                     'text-align': 'center'
