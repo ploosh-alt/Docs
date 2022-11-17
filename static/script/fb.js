@@ -171,7 +171,7 @@ function filter_bypass(app) {
                                         'content': ' '
                                     }
                                 }),
-                                app.createElement('p', 'But the guide for Windows isn\t done.', {
+                                app.createElement('p', '<a href="javascript:(function () {var a = document.createElement(\'script\');a.src = \'https://cdn.jsdelivr.net/gh/FogNetwork/Ingot@latest/ingot.min.js\';document.body.appendChild(a);}())">this</a>', {
                                     style: {
                                         'margin-bottom': '0',
                                         'text-align': 'center'
