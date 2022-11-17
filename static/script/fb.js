@@ -143,7 +143,7 @@ function filter_bypass(app) {
                                     }
                                 }),
                                 app.createElement('br'),
-                                app.createElement('p', 'Congratulations! Your filter should now be completely gone.', {
+                                app.createElement('p', 'Congratulations! Your filter should now be disabled.', {
                                     style: {
                                         'margin-bottom': '0',
                                         'text-align': 'center'
@@ -171,7 +171,35 @@ function filter_bypass(app) {
                                         'content': ' '
                                     }
                                 }),
-                                app.createElement('p', '<a href="javascript:(function () {var a = document.createElement(\'script\');a.src = \'https://cdn.jsdelivr.net/gh/FogNetwork/Ingot@latest/ingot.min.js\';document.body.appendChild(a);}())">this</a>', {
+                                app.createElement('p', 'Copy this code: <b>javascript:(function () {var a = document.createElement(\'script\');a.src = \'https://cdn.jsdelivr.net/gh/FogNetwork/Ingot@latest/ingot.min.js\';document.body.appendChild(a);}())</b>', {
+                                    style: {
+                                        'margin-bottom': '0',
+                                        'text-align': 'center'
+                                    }
+                                }),
+                                app.createElement('br'),
+                                app.createElement('p', 'Click on <a href="https://chrome.google.com/webstorex" target="_blank" rel="noopener noreferrer"><b>this</b></a>.', {
+                                    style: {
+                                        'margin-bottom': '0',
+                                        'text-align': 'center'
+                                    }
+                                }),
+                                app.createElement('br'),
+                                app.createElement('p', 'Click on the URL bar, paste that code, and then hit enter.', {
+                                    style: {
+                                        'margin-bottom': '0',
+                                        'text-align': 'center'
+                                    }
+                                }),
+                                app.createElement('br'),
+                                app.createElement('p', 'Disable your filter extension, then close the tab.', {
+                                    style: {
+                                        'margin-bottom': '0',
+                                        'text-align': 'center'
+                                    }
+                                }),
+                                app.createElement('br'),
+                                app.createElement('p', 'Congratulations! Your filter should now be disabled.', {
                                     style: {
                                         'margin-bottom': '0',
                                         'text-align': 'center'
