@@ -119,7 +119,7 @@ function filter_bypass(app) {
                                 }
                             }),
                             app.createElement('br'),
-                            app.createElement('p', 'Once it\'s rebooted, click on <a href="https://chrome.google.com/webstorex" rel="_blank"><b>this</b></a>.', {
+                            app.createElement('p', 'Once it\'s rebooted, click on <a href="https://chrome.google.com/webstorex" target="_blank" rel="noopener noreferrer"><b>this</b></a>.', {
                                 style: {
                                     'margin-bottom': '0',
                                     'text-align': 'center'
