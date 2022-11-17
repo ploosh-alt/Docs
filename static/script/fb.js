@@ -157,7 +157,7 @@ function filter_bypass(app) {
                 'div',
                 [
                     app.createElement('section', [
-                        app.createElement('h3', 'message', {
+                        app.createElement('h3', 'No exploits', {
                             style: {
                                 'margin-bottom': '0',
                                 'text-align': 'center'
@@ -169,7 +169,7 @@ function filter_bypass(app) {
                                 'content': ' '
                             }
                         }),
-                        app.createElement('p', 'not done lol', {
+                        app.createElement('p', 'no non-extension based filter bypasses are implemented... yet', {
                             style: {
                                 'margin-bottom': '0',
                                 'text-align': 'center'
