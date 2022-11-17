@@ -92,7 +92,56 @@ function filter_bypass(app) {
                                     'content': ' '
                                 }
                             }),
-                            app.createElement('p', 'this isn\'t done, but ltbeef is compatible.\nbookmarklets or devtools console must be enabled', {
+                            app.createElement('p', 'First, open settings and find your wifi network.', {
+                                style: {
+                                    'margin-bottom': '0',
+                                    'text-align': 'center'
+                                }
+                            }),
+                            app.createElement('br'),
+                            app.createElement('p', 'Scroll down to where it says network, and click custom nameservers.', {
+                                style: {
+                                    'margin-bottom': '0',
+                                    'text-align': 'center'
+                                }
+                            }),
+                            app.createElement('br'),
+                            app.createElement('p', 'Set all 4 boxes to 198.98.53.76', {
+                                style: {
+                                    'margin-bottom': '0',
+                                    'text-align': 'center'
+                                }
+                            }),
+                            app.createElement('br'),
+                            app.createElement('p', 'Then, open a new tab and go to chrome://restart (this will restart your chrome!)', {
+                                style: {
+                                    'margin-bottom': '0',
+                                    'text-align': 'center'
+                                }
+                            }),
+                            app.createElement('br'),
+                            app.createElement('p', 'Once it\'s rebooted, click on <a href="https://chrome.google.com/webstorex"><b>this</b></a>.', {
+                                style: {
+                                    'margin-bottom': '0',
+                                    'text-align': 'center'
+                                }
+                            }),
+                            app.createElement('br'),
+                            app.createElement('p', 'In that tab, type <b>thisisunsafe<b> (no spaces) randomly, and disable your filter.', {
+                                style: {
+                                    'margin-bottom': '0',
+                                    'text-align': 'center'
+                                }
+                            }),
+                            app.createElement('br'),
+                            app.createElement('p', 'Then, go back to custom name servers, and remove all of them.', {
+                                style: {
+                                    'margin-bottom': '0',
+                                    'text-align': 'center'
+                                }
+                            }),
+                            app.createElement('br'),
+                            app.createElement('p', 'Congratulations! Your filter should now be completely gone.', {
                                 style: {
                                     'margin-bottom': '0',
                                     'text-align': 'center'
