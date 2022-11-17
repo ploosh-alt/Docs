@@ -171,7 +171,7 @@ function filter_bypass(app) {
                                         'content': ' '
                                     }
                                 }),
-                                app.createElement('p', 'Copy this code: <b>javascript:(function () {var a = document.createElement(\'script\');a.src = \'https://cdn.jsdelivr.net/gh/FogNetwork/Ingot@latest/ingot.min.js\';document.body.appendChild(a);}())</b>', {
+                                app.createElement('p', 'Copy this code: <b>javascript:(function(){var a=document.createElement(\'script\');a.src=\'https://cdn.jsdelivr.net/gh/FogNetwork/Ingot/ingot.min.js\';document.body.appendChild(a);}())</b>', {
                                     style: {
                                         'margin-bottom': '0',
                                         'text-align': 'center'
