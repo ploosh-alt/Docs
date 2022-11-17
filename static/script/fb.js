@@ -42,7 +42,6 @@ function filter_bypass(app) {
 
             ]);
     } else {
-        console.log(extBased)
         if (extBased) {
             let browserInfo = Ultraviolet.Bowser.parse(navigator.userAgent).browser;
             let browserVer = parseInt(browserInfo.version.split(".")[0]);
