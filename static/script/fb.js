@@ -43,7 +43,9 @@ function filter_bypass(app) {
             ]);
     } else {
         if (extBased) {
-            let browserInfo = Ultraviolet.Bowser.parse(navigator.userAgent).browser;
+            let uaInfo = Ultraviolet.Bowser.parse(navigator.userAgent)
+            let browserInfo = uaInfo.browser;
+            let isCrOS = uaInfo.os.name == "Chrome OS";
             let browserVer = parseInt(browserInfo.version.split(".")[0]);
             let browserName = browserInfo.name;
             if (browserVer >= 106) {
@@ -75,82 +77,112 @@ function filter_bypass(app) {
         
                     ]);
             } else {
-                app.main.filter_bypass = app.createElement(
-                    'div',
-                    [
-                        app.createElement('section', [
-                            app.createElement('h3', 'Exploit found!', {
-                                style: {
-                                    'margin-bottom': '0',
-                                    'text-align': 'center'
-                                }
+                if (isCrOS) {
+                    app.main.filter_bypass = app.createElement(
+                        'div',
+                        [
+                            app.createElement('section', [
+                                app.createElement('h3', 'Exploit found!', {
+                                    style: {
+                                        'margin-bottom': '0',
+                                        'text-align': 'center'
+                                    }
+                                }),
+                                app.createElement('br', '', {
+                                    style: {
+                                        'line-height': '7.5em',
+                                        'content': ' '
+                                    }
+                                }),
+                                app.createElement('p', 'First, open settings and find your WiFi network.', {
+                                    style: {
+                                        'margin-bottom': '0',
+                                        'text-align': 'center'
+                                    }
+                                }),
+                                app.createElement('br'),
+                                app.createElement('p', 'Scroll down to where it says network, and click custom nameservers.', {
+                                    style: {
+                                        'margin-bottom': '0',
+                                        'text-align': 'center'
+                                    }
+                                }),
+                                app.createElement('br'),
+                                app.createElement('p', 'Set all 4 boxes to 198.98.53.76', {
+                                    style: {
+                                        'margin-bottom': '0',
+                                        'text-align': 'center'
+                                    }
+                                }),
+                                app.createElement('br'),
+                                app.createElement('p', 'Then, open a new tab and go to chrome://restart (this will restart your chrome!)', {
+                                    style: {
+                                        'margin-bottom': '0',
+                                        'text-align': 'center'
+                                    }
+                                }),
+                                app.createElement('br'),
+                                app.createElement('p', 'Once it\'s rebooted, click on <a href="https://chrome.google.com/webstorex" target="_blank" rel="noopener noreferrer"><b>this</b></a>.', {
+                                    style: {
+                                        'margin-bottom': '0',
+                                        'text-align': 'center'
+                                    }
+                                }),
+                                app.createElement('br'),
+                                app.createElement('p', 'In that tab, type <b>thisisunsafe</b> (no spaces) randomly, and disable your filter extension.', {
+                                    style: {
+                                        'margin-bottom': '0',
+                                        'text-align': 'center'
+                                    }
+                                }),
+                                app.createElement('br'),
+                                app.createElement('p', 'Then, go back to custom name servers, and remove all of them.', {
+                                    style: {
+                                        'margin-bottom': '0',
+                                        'text-align': 'center'
+                                    }
+                                }),
+                                app.createElement('br'),
+                                app.createElement('p', 'Congratulations! Your filter should now be completely gone.', {
+                                    style: {
+                                        'margin-bottom': '0',
+                                        'text-align': 'center'
+                                    }
+                                }),
+                            ], {
+                                class: 'data-section'
                             }),
-                            app.createElement('br', '', {
-                                style: {
-                                    'line-height': '7.5em',
-                                    'content': ' '
-                                }
+            
+                        ]);
+                } else {
+                    app.main.filter_bypass = app.createElement(
+                        'div',
+                        [
+                            app.createElement('section', [
+                                app.createElement('h3', 'Exploit found!', {
+                                    style: {
+                                        'margin-bottom': '0',
+                                        'text-align': 'center'
+                                    }
+                                }),
+                                app.createElement('br', '', {
+                                    style: {
+                                        'line-height': '7.5em',
+                                        'content': ' '
+                                    }
+                                }),
+                                app.createElement('p', 'But the guide for Windows isn\t done.', {
+                                    style: {
+                                        'margin-bottom': '0',
+                                        'text-align': 'center'
+                                    }
+                                }),
+                            ], {
+                                class: 'data-section'
                             }),
-                            app.createElement('p', 'First, open settings and find your WiFi network.', {
-                                style: {
-                                    'margin-bottom': '0',
-                                    'text-align': 'center'
-                                }
-                            }),
-                            app.createElement('br'),
-                            app.createElement('p', 'Scroll down to where it says network, and click custom nameservers.', {
-                                style: {
-                                    'margin-bottom': '0',
-                                    'text-align': 'center'
-                                }
-                            }),
-                            app.createElement('br'),
-                            app.createElement('p', 'Set all 4 boxes to 198.98.53.76', {
-                                style: {
-                                    'margin-bottom': '0',
-                                    'text-align': 'center'
-                                }
-                            }),
-                            app.createElement('br'),
-                            app.createElement('p', 'Then, open a new tab and go to chrome://restart (this will restart your chrome!)', {
-                                style: {
-                                    'margin-bottom': '0',
-                                    'text-align': 'center'
-                                }
-                            }),
-                            app.createElement('br'),
-                            app.createElement('p', 'Once it\'s rebooted, click on <a href="https://chrome.google.com/webstorex" target="_blank" rel="noopener noreferrer"><b>this</b></a>.', {
-                                style: {
-                                    'margin-bottom': '0',
-                                    'text-align': 'center'
-                                }
-                            }),
-                            app.createElement('br'),
-                            app.createElement('p', 'In that tab, type <b>thisisunsafe</b> (no spaces) randomly, and disable your filter extension.', {
-                                style: {
-                                    'margin-bottom': '0',
-                                    'text-align': 'center'
-                                }
-                            }),
-                            app.createElement('br'),
-                            app.createElement('p', 'Then, go back to custom name servers, and remove all of them.', {
-                                style: {
-                                    'margin-bottom': '0',
-                                    'text-align': 'center'
-                                }
-                            }),
-                            app.createElement('br'),
-                            app.createElement('p', 'Congratulations! Your filter should now be completely gone.', {
-                                style: {
-                                    'margin-bottom': '0',
-                                    'text-align': 'center'
-                                }
-                            }),
-                        ], {
-                            class: 'data-section'
-                        }),
-        
-                    ]);
+            
+                        ]);
+                }
             }
         } else {
             app.main.filter_bypass = app.createElement(
