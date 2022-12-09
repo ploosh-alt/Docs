@@ -21,6 +21,7 @@
 ## Docker
 
 Run: `docker run -p 8080:8080 -d ghcr.io/plooshi/docs:main`
+<br>
 setting up as a systemd service is recommended
 
 ## Discord Server

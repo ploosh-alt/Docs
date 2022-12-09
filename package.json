@@ -1,6 +1,6 @@
 {
   "name": "plooshidocs",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Plooshi docs",
   "type": "module",
   "scripts": {
@@ -32,7 +32,7 @@
   "author": "guacaplushy",
   "license": "GPL-3.0-or-later",
   "dependencies": {
-    "@tomphttp/bare-server-node": "1.0.4-deps1",
+    "@tomphttp/bare-server-node": "^1.2.2",
     "serve-static": "^1.15.0"
   },
   "engines": {

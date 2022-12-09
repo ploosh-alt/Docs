@@ -183,6 +183,7 @@ document.querySelector('.access-panel .controls .icon').addEventListener('error'
 document.querySelector('.access-panel').addEventListener('mouseenter', async event => {
     const frame = document.querySelector('.access-frame');
     const win = frame.contentWindow;
+    win.__uv.client = new win.UVClient(win);
 
     if (win && win.__uv) {
         document.querySelector('.access-panel .controls input').value = Object.getOwnPropertyDescriptor(Document.prototype, 'title').get.call(win.document);
