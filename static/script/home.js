@@ -1,8 +1,5 @@
 const tips = [
-    'Join our <a href="/load.html#aHR0cHM6Ly9kaXNjb3JkLmdnLzRQMkFnQlBZeHc%3D">Discord</a>!',
-    '<a href="/load.html#aHR0cHM6Ly9wYXRyZW9uLmNvbS9ndWFjYXBsdXNoeQ%3D%3D">Donate</a> to keep Plooshi Docs running!',
-    `Updated at ${new Date().toLocaleString()}!`,
-    'Now much faster!'
+    'If you are the creator of <a href="https://sites.google.com/view/bitteryhealth">https://sites.google.com/view/bitteryhealth</a>, please email me at <a href="mailto:me@ploosh.dev"><b>me@ploosh.dev</b></a>, or message me on Discord (Ploosh#5971). I would like to clear a couple things up.',
 ];
 
 
