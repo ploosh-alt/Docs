@@ -1,5 +1,9 @@
 const tips = [
-    'If you are the creator of <a href="https://sites.google.com/view/bitteryhealth">https://sites.google.com/view/bitteryhealth</a>, please email me at <a href="mailto:me@ploosh.dev"><b>me@ploosh.dev</b></a>, or message me on Discord (Ploosh#5971). I would like to clear a couple things up.',
+    'the_plush on discord',
+    'very bored',
+    'updated today!',
+    'rofl',
+    'japanese url is crazy'
 ];
 
 
