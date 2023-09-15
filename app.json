@@ -1,7 +1,7 @@
 {
-    "name": "Incognito",
-    "description": "Unofficial Incognito easy deployment version with TompHTTP bare server included.",
-    "repository": "https://github.com/amethystnetwork-dev/Incognito",
-    "logo": "https://github.com/amethystnetwork-dev/Incognito/blob/main/static/index.svg?raw=true",
+    "name": "Plooshi Docs",
+    "description": "Plooshi Docs is a web service which can be used to go to censored websites..",
+    "repository": "https://github.com/ploosh-alt/Docs",
+    "logo": "https://github.com/ploosh-alt/Docs/blob/main/static/index.svg?raw=true",
     "keywords": ["unoffical", "ultraviolet", "unblock", "titaniumnetwork", "bypass-filter", "amethystnetwork-dev"]
 }

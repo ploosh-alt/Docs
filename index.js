@@ -1,4 +1,4 @@
-import createServer from '@tomphttp/bare-server-node';
+import { createBareServer } from '@tomphttp/bare-server-node';
 import { fileURLToPath } from "url";
 import http from 'http';
 import serveStatic from "serve-static";
@@ -8,7 +8,7 @@ const cpus = os.cpus().length;
 
 const port = process.env.PORT || 8080;
 var data = { live: 0, peak: 0, visits: 0 }
-const bare = createServer('/bare/');
+const bare = createBareServer('/bare/');
 const serve = serveStatic(fileURLToPath(new URL("./static/", import.meta.url)), { fallthrough: false });
 const server = http.createServer();
 

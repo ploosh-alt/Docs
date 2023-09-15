@@ -32,7 +32,7 @@
   "author": "guacaplushy",
   "license": "GPL-3.0-or-later",
   "dependencies": {
-    "@tomphttp/bare-server-node": "^1.2.3",
+    "@tomphttp/bare-server-node": "^2.0.1",
     "serve-static": "^1.15.0"
   },
   "engines": {

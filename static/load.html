@@ -13,7 +13,7 @@
             }
 
             body {
-                background: #111;
+                background: #000;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -35,15 +35,15 @@
 
             .info {
                 color: #FFF;
-                max-width: 600px;
+                max-width: 100%;
                 text-align: center;
-                margin: 35px 0px 0px 0px;
+                margin: 8px 0px 0px 0px;
             }
 
             .ploosh {
                 display: inline-block;
-                width: 160px;
-                height: 160px;
+                width: 148px;
+                height: 148px;
                 content: " ";
                 display: block;
                 margin: 16px;
@@ -52,7 +52,7 @@
 
             @keyframes ploosh-spin {
                 0% {
-                    transtform: rotate(0deg);
+                    transform: rotate(0deg);
                 }
                 100% {
                     transform: rotate(360deg);
@@ -66,9 +66,8 @@
         <div class="msg">
             <img alt="loading ploosh" class="ploosh" src="./ploosh.webp"></img>
             <p class="info">
-                Please wait a moment.
-                Our service maybe under high load causing some slowness on our servers. Your request will eventually be
-                responded to.
+                Please wait for the website to load.
+                This may take a while depending on your internet connection and the usage on the server.
             </p>
         </div>
 

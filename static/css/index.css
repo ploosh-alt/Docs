@@ -520,7 +520,7 @@ nav *:last-child {
 }
 
 nav.pd_round {
-    border-radius: 15px;
+    border-radius: 12px;
     border: 1px solid var(--accent);
     padding: 0 10px;
     flex-grow: 1;
